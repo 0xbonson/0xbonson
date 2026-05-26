@@ -2,7 +2,7 @@
 
 I explore AI agents, developer tools, and signal-driven systems.
 
-Currently focused on building small experiments around agent workflows, automation, onchain signals, and tools that help people move faster.
+Currently building small experiments around agent workflows, automation, onchain signals, and developer productivity.
 
 ## Focus
 
