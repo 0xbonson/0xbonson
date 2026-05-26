@@ -1,16 +1,37 @@
-## Hi there 👋
+# Hi, I'm Bonson
 
-<!--
-**0xbonson/0xbonson** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I explore AI agents, developer tools, and signal-driven systems.
 
-Here are some ideas to get you started:
+Currently focused on building small experiments around agent workflows, automation, onchain signals, and tools that help people move faster.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Focus
+
+- AI agents
+- Developer tools
+- Automation workflows
+- Onchain and social signals
+- Lightweight product experiments
+
+## Tech Stack
+
+![TypeScript](https://img.shields.io/badge/TypeScript-111827?style=flat&logo=typescript)
+![JavaScript](https://img.shields.io/badge/JavaScript-111827?style=flat&logo=javascript)
+![Python](https://img.shields.io/badge/Python-111827?style=flat&logo=python)
+![React](https://img.shields.io/badge/React-111827?style=flat&logo=react)
+![Solidity](https://img.shields.io/badge/Solidity-111827?style=flat&logo=solidity)
+
+## Currently Learning
+
+- Agent runtime design
+- AI-assisted development workflows
+- Signal processing for Web3 and social data
+- Better frontend architecture
+- Smart contract development
+
+## Direction
+
+I’m interested in tools that combine intelligence, automation, and useful signals.
+
+## Find me
+
+X: [@0xbonson](https://x.com/0xbonson)
