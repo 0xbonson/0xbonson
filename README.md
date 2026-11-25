@@ -1,51 +1,113 @@
-```text
-┌──────────────────────────────────────────────────────────────────────────┐
-│  0xbonson :: Ammar Fasya                                                │
-│  Computer Engineering · Networks & HPC · AI Agents · Signal Systems      │
-└──────────────────────────────────────────────────────────────────────────┘
-```
+<div align="center">
 
-I am a Computer Engineering undergraduate interested in how **noisy real-world signals** (network latency, IoT gas sensors, video frames, blockchain calldata) become **observable, reliable software** — and how **AI agents and developer tools** can operate safely on top of them.
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,50:0F4C81,100:0284C7&height=210&section=header&text=Ammar%20Fasya&fontSize=50&fontColor=F8FAFC&fontAlignY=38&desc=0xbonson%20%C2%B7%20Networks%20%26%20HPC%20%C2%B7%20AI%20Agents%20%C2%B7%20Signal%20Systems&descSize=17&descAlignY=58&descColor=BAE6FD&animation=fadeIn" width="100%"/>
 
-Instead of chasing abstract benchmarks, I learn best by wiring systems end-to-end: from telemetry capture and transport protocols to automated tooling and evaluation.
+<br/>
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1100&color=38BDF8&center=true&vCenter=true&width=680&lines=Computer+Engineering+%40+Universitas+Syiah+Kuala;Networks+%26+HPC+%7C+Telemetry+%26+Signal+Systems;Building+AI+Agent+CLIs+%26+Developer+Tooling;APIE+Advance+Camp+Participant+(Japan)" alt="Typing SVG" />
+
+<br/>
+
+<p align="center">
+  <a href="https://github.com/0xbonson?tab=repositories"><img src="https://img.shields.io/badge/GitHub-0F172A?style=for-the-badge&logo=github&logoColor=38BDF8"/></a>
+  <a href="https://x.com/0xbonson"><img src="https://img.shields.io/badge/@0xbonson-0F172A?style=for-the-badge&logo=x&logoColor=38BDF8"/></a>
+  <a href="https://paham-eta.vercel.app"><img src="https://img.shields.io/badge/PAHAM_Live-0F4C81?style=for-the-badge&logo=vercel&logoColor=F8FAFC"/></a>
+  <img src="https://komarev.com/ghpvc/?username=0xbonson&style=for-the-badge&color=0284C7&labelColor=0F172A&label=VIEWS" alt="Profile views" />
+</p>
+
+</div>
 
 ---
 
-### How My Projects Connect
+### `whoami`
+
+```python
+class Engineer:
+    name: str = "Ammar Fasya (0xbonson)"
+    education: str = "B.Eng. Computer Engineering, Universitas Syiah Kuala"
+    focus: list[str] = [
+        "Computer Networks & High-Performance Computing (HPC)",
+        "AI Agents & Developer Tooling",
+        "Signal-Driven Systems & IoT Telemetry",
+    ]
+    philosophy: str = (
+        "Understand how noisy real-world signals behave, wire systems end-to-end, "
+        "and build deterministic tooling around them."
+    )
+```
+
+I am a Computer Engineering undergraduate who learns by wiring systems from end to end — turning noisy network latency, sensor telemetry, video frames, and raw calldata into **observable, verifiable software**.
+
+---
+
+### Architecture Map
 
 ```mermaid
 flowchart LR
-    S["Signals & Telemetry\n(RPC Latency · MQ-136/MQ-4 · Video)"] --> T["Transport & Pipelines\n(MQTT TLS · WebSocket · FastAPI · ByteTrack)"]
+    S["Signals & Telemetry\n(RPC Latency · MQ-136/MQ-4 · Video)"] --> T["Transport & Pipelines\n(MQTT TLS 8883 · WS · FastAPI · ByteTrack)"]
     T --> M["Models & Verification\n(RF/XGBoost/LSTM · YOLOv11+VLM · Foundry)"]
     M --> A["Agentic Dev Tools\n(mend-cli · maintainerforge · PAHAM)"]
 ```
 
 ---
 
-### Verified Selected Work *(Recommended Pins)*
+### Featured Engineering Projects
 
-| System | Stack & Protocol | Verified Engineering Detail |
-| :--- | :--- | :--- |
-| [**mend-cli**](https://github.com/0xbonson/mend-cli) | `TypeScript` · `CLI` | Atomic multi-file code patcher for LLM edits; supports 4 formats (`unified`, `search-replace`, `v4a`, `json`) with 3-tier whitespace/indentation reconciliation. |
-| [**nexgas-backend**](https://github.com/0xbonson/nexgas-backend) | `TypeScript` · `Express 5` · `MQTT TLS` · `SQLite WAL` | Cloud telemetry backend for ESP32 biogas reactors ($\text{CH}_4$, $\text{H}_2\text{S}$, pressure) over HiveMQ TLS (8883), `ws` gateway, and Turso/libSQL offline resilience. |
-| [**video-object-tracking**](https://github.com/0xbonson/video-object-tracking) | `Python 3.11` · `YOLOv11` · `ByteTrack` · `Ollama` | Local-first CV pipeline isolating primary subjects (`>15%` bbox area), sampling every `3s` into deterministic `qwen2.5vl:3b` (`temp=0.0`) JSON, with DB/file GC. |
-| [**maintainerforge**](https://github.com/0xbonson/maintainerforge) | `Python` · `GitHub Actions` | Read-only-by-default OSS maintainer toolkit for rule-based issue triage, file-path PR risk scoring, security checklists, and CI JSON output. |
-| [**pariter**](https://github.com/0xbonson/pariter) | `Solidity` · `Foundry` · `TypeScript` | Non-custodial USDC batch payout & settlement verifier on Arc Mainnet (`5042`); `19/19` Foundry & `53/53` Vitest passing (*Circle Arc Microgrants 2026*). |
-| [**paham**](https://github.com/0xbonson/paham) | `Next.js` · `TypeScript` · `Solidity` | Pre-sign Web3 security layer ([live](https://paham-eta.vercel.app)) surfacing semantic diffs between UI intent and raw transaction calldata (*ID Web3 Hackathon 2026*). |
+#### 🔧 [mend-cli](https://github.com/0xbonson/mend-cli) — Atomic Multi-File Code Patcher
+A deterministic CLI built to reconcile imprecise diffs generated by AI coding agents across a repository.
+- **4 Patch Formats:** Auto-detects and parses `unified` diffs, `SEARCH/REPLACE` blocks, `V4A` multi-file patches, and `JSON` tool edits (`create`, `str_replace`, `insert`).
+- **3-Tier Matching:** Falls back cleanly from exact match (`Tier 0`) → trailing whitespace trim (`Tier 1`) → indent-reconciling match (`Tier 2`), with `--strict` mode for exact enforcement.
+- **Atomicity:** All-or-nothing disk writes so partial/broken patches never corrupt a repository.
 
-*(Also building [**rumiflux-ai**](https://github.com/0xbonson/rumiflux-ai) — biogas pre-feasibility decision support with Python, MCP, Langflow & Astra DB.)*
+`TypeScript` `CLI` `Diff/Patch Engine` `AI DevTools`
+
+---
+
+#### 📡 [nexgas-backend](https://github.com/0xbonson/nexgas-backend) — Real-Time IoT Biogas Telemetry Backend
+Cloud backend for **NEX-GAS**, monitoring anaerobic biogas reactors ($\text{CH}_4$, $\text{H}_2\text{S}$, ambient leaks, digester pressure) in real time.
+- **Transport Pipeline:** Ingests sensor frames from **ESP32 DevKit** (`MQ-136`, `MQ-4`, `DHT22`) over **HiveMQ Cloud MQTT via TLS (port 8883)** and streams live state via `ws` WebSocket gateway.
+- **Persistence & Resilience:** Express 5 + TypeScript (NodeNext ESM) backed by **Turso Cloud (libSQL)** and local **SQLite WAL** (`better-sqlite3`), preserving historical telemetry and last-known snapshots even when hardware goes offline.
+
+`TypeScript` `Express 5` `MQTT TLS` `WebSockets` `Turso / SQLite WAL`
+
+---
+
+#### 🎥 [video-object-tracking](https://github.com/0xbonson/video-object-tracking) — Local-First CV & VLM Attribute Pipeline
+Tracks primary subjects in video footage and extracts structured semantic attributes locally without cloud VLM dependencies.
+- **Pipeline:** `Video → YOLOv11 → ByteTrack → >15% BBox Area Filter → 3s Time-Based Crop → Ollama (qwen2.5vl:3b) → SQLite → React`.
+- **Latency & Hallucination Control:** Filters background crowds via bounding-box area threshold, samples every 3 seconds to avoid VLM bottlenecks, and constrains `qwen2.5vl:3b` at `temperature=0.0` for deterministic JSON output.
+- **Storage GC:** Synchronizes React frontend deletions with physical cropped-frame cleanup on the FastAPI backend.
+
+`Python 3.11` `YOLOv11` `ByteTrack` `FastAPI` `Ollama VLM` `React`
+
+---
+
+#### 🛡️ [maintainerforge](https://github.com/0xbonson/maintainerforge) & [pariter](https://github.com/0xbonson/pariter) & [paham](https://github.com/0xbonson/paham)
+- **MaintainerForge** (`Python` · `GitHub Actions`): Auditable, *read-only-by-default* OSS maintainer toolkit for rule-based issue classification, file-path PR risk scoring, security checklists, and release-note generation.
+- **Pariter** (`Solidity` · `Foundry` · `TypeScript`): Non-custodial USDC batch payout & settlement verification engine on **Circle Arc Mainnet (`5042`)** — **`19/19` Foundry & `53/53` Vitest passing** (*Circle Arc Microgrants 2026*).
+- **PAHAM** (`Next.js` · `TypeScript` · `Solidity`): Pre-sign Web3 security layer ([live app](https://paham-eta.vercel.app)) revealing semantic diffs between UI intent and raw transaction calldata (*Indonesia Web3 Hackathon 2026*).
 
 ---
 
 ### Research & Field Programs
 
-- **Undergraduate Thesis — RPC Latency Forecasting**: Collected empirical RPC endpoint latency time-series and benchmarked lag-engineered forecasting models (**Random Forest $R^2 = 0.845$, $\text{MAE} = 12.79\text{ ms}$** vs. XGBoost $0.843$, LSTM $0.818$, Linear Regression $0.769$; without lag features $R^2$ drops to $-3.64$).
-- **APIE Advance Camp (Japan)**: Hands-on network engineering, Linux, and containerized service architecture (`Docker`, `Nginx`, `Flask`).
+- **Undergraduate Thesis — RPC Latency Forecasting:** Collected empirical blockchain RPC endpoint latency time-series and benchmarked lag-engineered models — **Random Forest achieved $R^2 = 0.845$ ($\text{MAE} = 12.79\text{ ms}$, $\text{RMSE} = 20.34\text{ ms}$)**, outperforming XGBoost ($0.843$), LSTM ($0.818$), and Linear Regression ($0.769$), while proving lag features are critical (without lag, $R^2$ collapses to $-3.64$).
+- **APIE Advance Camp (Japan):** Hands-on network engineering, Linux administration, and containerized infrastructure labs (`Docker`, `Nginx`, `Flask`).
 
 ---
 
-### Core Stack
+### Tech Stack
 
-`Python` · `TypeScript` · `Linux` · `Docker` · `MQTT / WebSockets` · `Git` · `Solidity`
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-0F172A?style=for-the-badge&logo=python&logoColor=38BDF8" />
+  <img src="https://img.shields.io/badge/TypeScript-0F172A?style=for-the-badge&logo=typescript&logoColor=38BDF8" />
+  <img src="https://img.shields.io/badge/Linux-0F172A?style=for-the-badge&logo=linux&logoColor=38BDF8" />
+  <img src="https://img.shields.io/badge/Docker-0F172A?style=for-the-badge&logo=docker&logoColor=38BDF8" />
+  <img src="https://img.shields.io/badge/FastAPI-0F172A?style=for-the-badge&logo=fastapi&logoColor=38BDF8" />
+  <img src="https://img.shields.io/badge/SQLite-0F172A?style=for-the-badge&logo=sqlite&logoColor=38BDF8" />
+  <img src="https://img.shields.io/badge/MQTT-0F172A?style=for-the-badge&logo=eclipse-mosquitto&logoColor=38BDF8" />
+  <img src="https://img.shields.io/badge/Solidity-0F172A?style=for-the-badge&logo=solidity&logoColor=38BDF8" />
+  <img src="https://img.shields.io/badge/Git-0F172A?style=for-the-badge&logo=git&logoColor=38BDF8" />
+</p>
 
-`X:` [@0xbonson](https://x.com/0xbonson)
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,50:0F4C81,100:0284C7&height=90&section=footer" width="100%"/>
